@@ -2,6 +2,14 @@
 <html>
 
 
+{% extends 'index.html' %}
+
+{% block content %}
+    <h1>Home Page</h1>
+    <p>This is the home page</p>
+{% endblock %}
+    
+
 <head>
     <a href="{{ url_for('preds') }}">Get Predictions</a>
     <a href="{{ url_for('res') }}">Results</a>
